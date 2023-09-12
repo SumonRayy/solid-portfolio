@@ -21,29 +21,25 @@ h1 {
   font-weight: 100;
   line-height: 1.1;
   margin: 4rem auto;
-  max-width: 14rem;
+  max-width: none;
 }
 
 p {
-  max-width: 14rem;
-  margin: 2rem auto;
+  max-width: 50rem;
+  margin: 0 auto 8rem auto;
   line-height: 1.35;
-}
-
-@media (min-width: 480px) {
-  h1 {
-    max-width: none;
-  }
-
-  p {
-    max-width: none;
-  }
-}
-
-.intro {
-  width: 50em;
-  height: 100px;
 
   color: #70706f;
   text-align: justify;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  p {
+    margin: 0 auto 5em auto;
+  }
 }
