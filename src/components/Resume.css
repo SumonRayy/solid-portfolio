@@ -1,20 +1,26 @@
-.increment {
+.resume {
   font-family: inherit;
   font-size: inherit;
   padding: 1em 2em;
-  color: #335d92;
+  color: #6311ed;
   background-color: rgba(68, 107, 158, 0.1);
   border-radius: 2em;
   border: 2px solid rgba(68, 107, 158, 0);
   outline: none;
   width: 200px;
   font-variant-numeric: tabular-nums;
+
+  cursor: pointer;
 }
 
-.increment:focus {
-  border: 2px solid #335d92;
+.resume:focus {
+  border: 2px solid #6311ed;
 }
 
-.increment:active {
+.resume:active {
+  background-color: rgba(68, 107, 158, 0.2);
+}
+
+.resume:hover {
   background-color: rgba(68, 107, 158, 0.2);
 }

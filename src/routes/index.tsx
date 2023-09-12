@@ -1,19 +1,16 @@
 import { Title } from "solid-start";
-import Counter from "~/components/Counter";
+import Resume from "~/components/Resume";
 
 export default function Home() {
   return (
     <main>
       <Title>Hello World</Title>
-      <h1>Hello world!</h1>
-      <Counter />
-      <p>
-        Visit{" "}
-        <a href="https://start.solidjs.com" target="_blank">
-          start.solidjs.com
-        </a>{" "}
-        to learn how to build SolidStart apps.
+      <h1>{import.meta.env.VITE_RESUME_NAME || "Hello World!"}</h1>
+      <p class="intro">
+        {import.meta.env.VITE_RESUME_INTRO ||
+          "This is a bare SolidStart project."}
       </p>
+      <Resume />
     </main>
   );
 }
